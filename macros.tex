@@ -1,0 +1,37 @@
+%%
+%% macros.tex
+%% 
+%% Made by Alex Nelson <pqnelson@gmail.com>
+%% Login   <alex@lisp>
+%% 
+%% Started on  2025-09-08T13:26:33-0700
+%% Last update 2025-09-08T13:26:33-0700
+%%
+
+% fonts
+\def\texttt#1{{\tt #1}}
+\def\textbf#1{{\bf #1}}
+\def\textit#1{{\it #1\/}}
+\def\emph{\textit}
+
+
+% From Knuth's MMIX literate program(s)
+\def\bull{\smallbreak\textindent{$\bullet$}}
+\def\bul{\par\textindent{$\bullet$}}
+
+\def\beginword{\vcenter\bgroup\let\\=\wordrule\halign\bgroup&\hfil##\hfil\cr}
+\def\endword{\noalign{\vskip\baselineskip}\egroup\egroup
+   \advance\belowdisplayskip-\baselineskip}
+\def\wordrule{\vrule height 9.5pt depth 4.5pt width .4pt}
+\newdimen\bitwd \bitwd=6.6pt
+\def\field#1#2{\vrule depth 3pt width 0pt \hbox to#1\bitwd{\hss$#2$\hss}}
+
+
+
+%%
+%% Notation
+%%
+\def\WEB/{{\tt WEB\spacefactor1000}}
+\def\CWEB/{{\tt CWEB\spacefactor1000}}
+
+% Math notation

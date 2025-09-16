@@ -1,0 +1,14 @@
+*~
+# TeX output
+*.aux
+*.dvi
+*.idx
+*.ref
+*.scn
+*.sref
+*.toc
+*.pdf
+*.log
+
+index.tex
+mosml.tex

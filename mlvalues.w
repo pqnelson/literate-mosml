@@ -265,6 +265,13 @@ typedef void (*final_fun) @t\quad @> (value);
 
 
 @
+OCaml has \\{Atom(tag)} as well. Some documentation from version 3.0
+states:
+``|Atom(t)| returns an `atom' (zero-sized block) with tag $t$. Zero-sized blocks are preallocated outside of the heap. It is incorrect to try and allocate a zero-sized block using the functions below. For instance, |Atom(0)| represents the empty array.''
+
+The |first_atoms| array is initialized to a 256-element array
+in \texttt{main.c}. 
+
 @c
 /* 3- Atoms are 0-tuples.  They are statically allocated once and for all. */
 

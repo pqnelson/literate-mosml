@@ -26,6 +26,9 @@
 \newdimen\bitwd \bitwd=6.6pt
 \def\field#1#2{\vrule depth 3pt width 0pt \hbox to#1\bitwd{\hss$#2$\hss}}
 
+% When we want to add a label to a chunk without using @* (because we
+% do not want to start a new page, or place it on the table of contents)
+\def\node#1{\textbf{#1\enspace}\ignorespaces}
 
 
 %%
